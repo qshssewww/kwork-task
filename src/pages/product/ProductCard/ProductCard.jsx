@@ -210,7 +210,7 @@ export const ProductCard = ({ data }) => {
 						{
 							dataOpt?.images?.length > 0 ? (
 								dataOpt.images.map((item, index) => (
-									<SwiperSlide className="ProductCard__body_gallery_thumbs_sl" key={index}>
+									<SwiperSlide style={{width: 54}} className="ProductCard__body_gallery_thumbs_sl" key={index}>
 										<img src={`http://92.53.120.144${item.image_urls}`} alt="" />
 									</SwiperSlide>
 								))

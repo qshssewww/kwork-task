@@ -88,3 +88,9 @@ body {
         line-height: 22px;
     }
 }
+@media (max-width: 992px) {
+    .swiper-wrapper{
+        flex-direction: row!important;
+        justify-content: center;
+    }
+}
