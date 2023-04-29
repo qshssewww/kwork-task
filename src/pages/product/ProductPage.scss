@@ -1,0 +1,14 @@
+.ProductPage {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+}
+@media (max-width: 992px) {
+    .ProductPage {
+        &__in {
+            padding: 10px 0;
+        }
+    }
+}

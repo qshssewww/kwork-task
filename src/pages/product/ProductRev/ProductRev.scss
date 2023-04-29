@@ -1,0 +1,64 @@
+@import '../../../styles/global/variables.scss';
+
+.ProductRev {
+    padding: 50px 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        // border-bottom: 1px solid red;
+    }
+    &__action_top{
+        display: none!important;
+    }
+    &__action {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid rgba(36, 36, 36, 0.15);
+        height: 100px;
+        padding: 10px;
+        border-radius: 10px;
+
+        &_head {
+            display: flex;
+            border-bottom: 1px solid rgba(36, 36, 36, 0.05);
+            justify-content: space-between;
+            align-items: center;
+
+            &_text {
+                font-family: 'Gilroy';
+                font-size: 16px;
+                font-weight: 600;
+                color: rgba(36, 36, 36, 0.15);
+            }
+        }
+
+        .Button {
+            width: unset;
+            margin-top: 5px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .ProductRev {
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+        &__action_top{
+            display: flex!important;
+        }
+        &__action_bottom{
+            display: none!important;
+        }
+        &__action {
+            border: none;
+            &_head{
+                display: none;
+            }
+        }
+    }
+}

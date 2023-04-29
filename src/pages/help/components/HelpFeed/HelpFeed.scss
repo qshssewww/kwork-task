@@ -1,0 +1,58 @@
+.HelpFeed {
+	padding: 20px;
+	margin-top: 27px;
+	background: #FAFBFC;
+	border-radius: 12px;
+
+	&__title {
+		text-align: center;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	&__body {
+		max-width: 550px;
+		width: 100%;
+		margin: 0 auto;
+
+		&_rw {
+			margin-bottom: 10px;
+
+			input {
+				border-radius: 6px;
+				border-color: #E8E8E8;
+				padding: 12px;
+			}
+
+			textarea {
+				padding: 12px;
+				border-radius: 6px;
+				border-color: #E8E8E8;
+				resize: none;
+				height: 90px !important;
+			}
+		}
+
+		&_rw-action {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			button {
+				width: auto;
+			}
+		}
+
+
+	}
+}

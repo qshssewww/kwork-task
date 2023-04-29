@@ -1,0 +1,24 @@
+.Ribbon {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__head {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+
+        &_title {
+
+        }
+    }
+
+    &__body {
+
+        &_slider {
+            padding: 0 16px !important;
+            
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.BasketPage {
+
+    &__in {
+        padding: 40px 0;
+
+    }
+
+    &__head {
+        margin-bottom: 45px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 425px) {
+    .BasketPage {
+        &__body {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+    .BasketPage {
+        &__body {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+        }
+    }
+}

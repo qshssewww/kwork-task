@@ -1,0 +1,38 @@
+.Signup {
+	&__codesend {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+
+		input[type="number"]::-webkit-outer-spin-button,
+		input[type="number"]::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
+
+		input[type='number'],
+		input[type="number"]:hover,
+		input[type="number"]:focus {
+			appearance: none;
+			-moz-appearance: textfield;
+		}
+
+		input {
+			font-family: 'Gilroy';
+			text-decoration: none;
+			width: 30%;
+			height: 50px;
+			text-align: center;
+			font-size: 28px;
+			border-radius: 10px;
+			border: none;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			margin: 0 5px;
+
+
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}

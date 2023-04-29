@@ -1,0 +1,464 @@
+@import '../../../styles/global/variables.scss';
+
+.ProductCard {
+    &__head_bottom{
+        display: none!important;
+    }
+    &__head {
+        &_name {
+            position: relative;
+            margin-bottom: 30px;
+
+
+        }
+
+        &_dsc {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            padding: 4px 8px;
+            background-color: $orange;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 12px;
+            line-height: 100%;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        &_el {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+
+        }
+
+        &_bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(36, 36, 36, 0.15);
+
+            &_rate {}
+
+            &_info {
+                display: flex;
+                align-items: center;
+
+                &_item {
+                    font-size: 14px;
+                    color: rgba(36, 36, 36, 0.25);
+                    margin-left: 20px;
+                    display: flex;
+                    flex-direction: row;
+
+                    &_name {
+                        margin-right: 4px;
+                    }
+
+                    &_value {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 30px 0 10px 0;
+
+        &_gallery {
+            display: flex;
+            flex-direction: row;
+            width: 48%;
+
+            &_slider {
+                height: 500px;
+                width: 400px;
+                margin-bottom: 20px;
+
+                &_sl {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: flex;
+                    }
+                }
+            }
+
+            &_thumbs {
+                height: 450px !important;
+                padding: 20px 0;
+
+                &_sl {
+                    padding: 2px;
+                    border: 2px solid transparent;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: flex;
+                        border-radius: 4px;
+                    }
+
+                }
+
+                &_sl.swiper-slide-thumb-active {
+                    border-color: rgba(0, 90, 200, 0.8);
+                }
+
+                &_sl.swiper-slide-thumb-visible {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &_content {
+            width: 50%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            &_action {
+                width: 50%;
+
+                &_selects {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    // flex-direction: column;
+
+                    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+                        color: white;
+                        background: $btn;
+                    }
+
+                    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+                        color: white
+                    }
+
+                    &_part {
+                        margin-bottom: 20px;
+                        margin-right: 10px;
+
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+
+                        &_label {
+                            color: #D5DADE;
+                            margin-bottom: 10px;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 100%;
+
+                        }
+
+                        &_list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-left: -5px;
+                            margin-right: -5px;
+                        }
+
+                        &_item {
+                            height: 35px;
+                            border-radius: 5px;
+                            border: 1px solid $btn;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0 30px;
+                            margin: 0 5px 10px 5px;
+                            cursor: pointer;
+                            color: $btn;
+                            transition: all .3s ease;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                &_chars {
+                    padding: 20px 0;
+                    border-top: 1px solid #D5DADE;
+
+                    &_item {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        line-height: 16px;
+
+                        &_name {
+                            width: 49%;
+                            opacity: 0.4;
+                            // color: ;
+
+                        }
+
+                        &_value {
+                            width: 49%;
+                            text-align: right;
+                        }
+                    }
+                }
+
+                &_link {
+                    a {
+                        color: $btn;
+                        font-weight: 500;
+
+                        transition: all .3s ease;
+
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+
+            &_info {
+                width: 45%;
+
+                &_main {
+                    padding: 10px;
+                    border: 1px solid #D5DADE;
+                    border-radius: 10px;
+
+                    &_price {
+                        padding-bottom: 10px;
+
+                        &_main {
+                            font-size: 30px;
+                            line-height: 35px;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        }
+
+                        &_discount {
+                            font-size: 18px;
+                            text-decoration: line-through;
+                            font-weight: 600;
+                            color: rgba(36, 36, 36, 0.25);
+                        }
+
+
+                    }
+
+                    &_ex {
+                        padding-top: 10px;
+                        border-top: 1px solid #D5DADE;
+                        margin-bottom: 20px;
+
+                        &_note {
+                            button {
+                                color: var(--btn);
+                                transition: all .3s ease;
+                                font-weight: 500;
+                                display: flex;
+                                align-items: center;
+                                line-height: 100%;
+
+                                &:hover {
+                                    color: $orange;
+                                }
+                            }
+                        }
+                    }
+
+                    &_action {
+
+                        &_del {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 10px;
+                            line-height: 100% !important;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &_oc {
+                    padding: 20px 0;
+
+                }
+
+                &_del {
+                    margin-bottom: 25px;
+
+                    &_item {
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        line-height: 14px !important;
+
+                        &_el {
+                            display: inline-flex;
+                            align-items: flex-start;
+
+                            button {
+                                color: $btn;
+                                transition: all .3s ease;
+                                margin-left: 10px;
+
+                                &:hover {
+                                    color: $orange;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &_faq {
+
+                    &_list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+
+                    &_item {
+                        width: 48%;
+                        margin-bottom: 5px;
+
+                        a {
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: $btn;
+                            transition: all .3s ease;
+
+                            &:hover {
+                                color: $orange;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    }
+}
+@media (max-width: 992px) {
+    .ProductCard {
+        &__head_bottom{
+            border: none;
+            width: 100%;
+            display: block!important;
+        }
+        &__head_top{
+            display: none;
+        }
+        &__body{
+            padding: 0 0 20px 0;
+            flex-direction: column;
+            &_gallery{
+                flex-direction: column-reverse;
+                width: 100%;
+                &_thumbs{
+                    height: 80px!important;
+                    margin-left: 0!important;
+                    margin-right: 0!important;
+                    margin-bottom: 20px;
+                }
+                &_slider{
+                    margin: -20px 0;
+                    &_sl{
+                        display: flex!important;
+                        img{
+                            justify-content: center;
+                            width: 90%;
+                            margin-right: 24px;
+                            height: 90%;
+                        }
+                    }
+                }
+            }
+            &_content{
+                width: 100%;
+                flex-direction: column-reverse;
+                &_info{
+                    width: 100%;
+                    &_main{
+                        display: flex;
+                        align-items: center;
+                        border: none;
+                        &_ex{
+                            display: none;
+                        }
+                        &_action{
+                            min-width: 220px;
+                            margin-left: auto;
+                            &_del{
+                                display: none;
+                            }
+                        }
+                        &_price{
+                            &_main{
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                    &_del, &_faq{
+                        display: none;
+                    }
+                }
+                &_action{
+                    width: 100%;
+                    &_selects{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 786px) {
+    .ProductCard {
+        &__body{
+            &_gallery{
+                &_slider{
+                    width: 300px;
+                    margin: -40px 0;
+                    &_sl{
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            &_content {
+                &_info {
+                    &_main {
+                        padding: 0;
+                        &_action {
+                            min-width: 190px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

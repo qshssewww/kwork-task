@@ -1,0 +1,20 @@
+@import '../../styles/global/variables.scss';
+
+.Rating {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 18px;
+    color: $btn;
+
+    &__item {
+        margin: 0 2px;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import '../../../../../../styles/global/variables.scss';
+
+.LkUserData {
+
+    &__ex {
+        color: rgba(36, 36, 36, 0.5);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &__warning {
+        padding: 12px 30px;
+        border: 1px solid $orange;
+        color: $orange;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        &_icon {
+            line-height: 100%;
+            margin-right: 10px;
+        }
+    }
+
+    &__body {
+
+        &_item {
+            margin-bottom: 15px;
+
+            &_head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                &_label {
+                    color: rgba(36, 36, 36, 0.5);
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+
+                &_edit {
+                    color: $btn;
+                    transition: all .3s ease;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $orange;
+
+                    }
+                }
+            }
+
+            &_value {
+                font-weight: 600;
+                font-size: 19px;
+                line-height: 22px;
+                color: #242424;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .LkUserData {
+        &__body {
+            // display: flex;
+            // flex-direction: row;
+        }
+    }
+
+    // .ant-row {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+
+    // .ant-col-6 {
+    //     width: 10%;
+    // }
+
+}
+
+@media (min-width: 425px) and (max-width: 840px) {
+    .LkUserData {
+        &__body {
+            // display: flex;
+            // flex-direction: row;
+        }
+    }
+
+    // .ant-row {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+
+    // .ant-col-6 {
+    //     width: 10%;
+    // }
+
+}

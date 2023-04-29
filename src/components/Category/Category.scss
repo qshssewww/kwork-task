@@ -1,0 +1,117 @@
+@import '../../styles/global/variables.scss';
+
+.Menu {
+	position: absolute;
+	top: 120px;
+
+	left: 50px;
+	width: 50%;
+	height: 0px;
+	background: #FAFBFC;
+	z-index: 100;
+
+	border-radius: 0 0 10px 10px;
+	transition: all .3s ease;
+
+	overflow: hidden;
+
+	&__btn {
+		display: none;
+	}
+
+	&__body {
+		height: 100%;
+		padding: 15px !important;
+
+		.ant-tabs-nav {
+			overflow-y: auto;
+			width: 170px;
+
+			.ant-tabs-nav-wrap {
+				&:after {
+					display: none !important;
+				}
+
+				&:before {
+					display: none !important;
+				}
+			}
+
+			.ant-tabs-nav-operations {
+				display: none !important;
+			}
+		}
+	}
+}
+
+.Menu.active {
+	height: 350px;
+}
+
+@media (max-width: 425px) {
+	.Menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		&__btn {
+			padding: 6px 6px;
+			border-radius: 6px;
+			background-color: $btn;
+			display: flex;
+			align-items: center;
+			color: #fff;
+			margin-left: 20px;
+			margin-top: 10px;
+
+			// margin-left: 340px;
+			// margin-top: 10px;
+			// position: absolute;
+			// margin-right: 20px;
+			// margin-top: 10px;
+
+			&:hover {
+				background-color: $btn_hover;
+			}
+		}
+	}
+
+	.Menu.active {
+		height: 100vh;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+	.Menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		&__btn {
+			padding: 6px 6px;
+			border-radius: 6px;
+			background-color: $btn;
+			display: flex;
+			align-items: center;
+			color: #fff;
+			margin-left: 20px;
+			margin-top: 10px;
+
+			// margin-left: 340px;
+			// margin-top: 10px;
+			// position: absolute;
+			// margin-right: 20px;
+			// margin-top: 10px;
+
+			&:hover {
+				background-color: $btn_hover;
+			}
+		}
+	}
+
+	.Menu.active {
+		height: 100vh;
+	}
+}

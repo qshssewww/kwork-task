@@ -1,0 +1,22 @@
+.LkProds__body_cont {
+	display: flex;
+	flex-wrap: wrap;
+	// flex-basis: calc(25% - 10px);
+}
+
+.LkProds__body_product {
+	width: 220px;
+	// width: 1000px;
+}
+
+.LkProds__body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 470px) {
+	.LkProds__body_product {
+		width: 120px;
+		// width: 1000px;
+	}
+}

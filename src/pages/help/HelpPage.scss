@@ -1,0 +1,24 @@
+.HelpPage {
+
+	&__in {
+		padding: 40px 0;
+	}
+
+	&__body {
+
+		&_tabs {
+
+			.ant-tabs-nav {
+				width: 275px;
+
+				.ant-tabs-nav-list {
+
+					.ant-tabs-tab {
+						padding-left: 0;
+						margin: 0 !important;
+					}
+				}
+			}
+		}
+	}
+}

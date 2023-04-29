@@ -1,0 +1,26 @@
+@import '../../styles/global/variables.scss';
+ 
+.RatingPost {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 18px;
+    color: $btn;
+
+    &__item {
+        margin: 0 2px;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            color: $orange;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

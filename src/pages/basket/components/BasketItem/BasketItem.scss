@@ -1,0 +1,103 @@
+@import '../../../../styles/global/variables.scss';
+
+.BasketItem {
+    display: flex;
+    // align-items: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .3s ease;
+    border: 1px solid transparent;
+    
+
+    &:hover {
+        border-color: $text;
+    }
+
+    &__select { 
+        flex: 0 0 auto;
+        margin-right: 10px;
+    }
+
+    &__img {
+        width: 150px;
+        height: 150px;
+        flex: 0 0 auto;
+        margin-right: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: flex;
+        }
+    }
+
+    &__body {
+        width: 100%;
+        margin-right: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        &_main {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            
+
+            &_name {    
+                display: flex;
+                flex-direction: column;
+                font-size: 22px;
+                line-height: 28px;
+                font-weight: 500;
+                align-items: flex-start;
+                
+                &_discount {
+                    font-size: 10px;
+                    line-height: 10px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding: 5px 7px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 5px;
+                }
+            }
+
+            &_price {
+
+                &_get {
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 25px;
+                }
+
+                &_old {
+                    text-decoration: line-through;
+                    color: #aaa;
+                    font-size: 15px;
+                    line-height: 17px;
+                }
+            }
+        }
+
+        &_action {
+
+            &_delete {
+                display: flex;
+                align-items: center;
+
+                color: $red;
+                font-weight: 500;
+
+            }
+        }
+
+    }
+}

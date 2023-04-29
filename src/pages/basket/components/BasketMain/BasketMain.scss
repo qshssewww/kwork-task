@@ -1,0 +1,33 @@
+@import '../../../../styles/global/variables.scss';
+
+.BasketMain {
+    width: calc(100% - 365px);
+    
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(36, 36, 36, 0.1);
+        margin-bottom: 20px;
+
+        &_item {
+            margin-right: 20px;
+            color: rgba(36, 36, 36, 0.5);
+            font-weight: 500;
+
+            button {
+                transition: all .3s ease;
+
+                &:hover {
+                    color: $btn;
+                }
+            }
+        }
+        
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+}

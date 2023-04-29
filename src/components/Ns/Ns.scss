@@ -1,0 +1,75 @@
+@import '../../styles/global/variables.scss';
+
+.Ns {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__form {
+        background-color: $light_back;
+        padding: 42px 20px;
+        border-radius: 12px;
+
+
+        &_head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 45px;
+
+            &_title {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            &_text {
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+
+        &_row {
+            display: flex;
+            max-width: 495px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 45px;
+        }
+
+        &_input {
+            width: 100%;
+
+            input {
+                border-radius: 6px;
+                height: 100%;
+                width: 100%;
+                display: block;
+                padding: 12px;
+                background-color: #fff;
+                border: none;
+            }
+        }
+
+        &_action {
+            width: 110px;
+            margin-left: 5px;
+        }
+
+        &_ex {
+            text-align: center;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 500;
+
+            a {
+                color: $btn;
+                transition: all .3s ease;
+ 
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

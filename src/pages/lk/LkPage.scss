@@ -1,0 +1,30 @@
+.LkPage {
+
+    &__in {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 40px 0 80px;
+    }
+}
+
+@media (max-width: 425px) {
+    .LkPage {
+
+        &__in {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+}
+
+@media (min-width: 425px) and (max-width: 525px) {
+    .LkPage {
+
+        &__in {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

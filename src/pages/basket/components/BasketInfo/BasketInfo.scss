@@ -1,0 +1,42 @@
+.BasketInfo {
+    width: 265px;
+    padding: 10px 15px;
+    margin-top: 50px;
+    border: 1px solid rgba(36, 36, 36, 0.15);
+    border-radius: 8px;
+
+    &__total {
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(36, 36, 36, 0.25);
+        font-weight: 600;
+
+        &_get {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 5px;
+        }
+
+        &_old {
+            text-decoration: line-through;
+            color: #aaa;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__main {
+        padding: 10px 0 25px;
+
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            margin-bottom: 10px;
+
+            &_name {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}

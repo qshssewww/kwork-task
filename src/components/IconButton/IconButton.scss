@@ -1,0 +1,52 @@
+@import '../../styles/global/variables.scss';
+
+.IconButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	font-size: 16px;
+	line-height: 19px;
+	background-color: $light_back;
+	padding: 12px;
+	border-radius: 6px;
+	overflow: hidden;
+	transition: all .3 ease;
+	color: $text;
+
+	&:hover {
+        background-color: $orange;
+        color: #fff;
+    }
+
+	&:active {
+		transform: scale(0.95);
+	}
+}
+
+.IconButton.active {
+	background-color: $light_back;
+
+    span {
+        color: $orange; 
+    }
+}
+
+// .IconButton.like.active {
+    
+//     background-color: $light_back;
+
+//     span {
+//         color: red; 
+//     }
+// }
+
+.IconButton.danger {
+    background-color: rgb(242, 83, 83) !important;
+    color: #fff;
+
+    span {
+        color: #fff !important;
+    }
+}

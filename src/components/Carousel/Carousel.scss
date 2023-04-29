@@ -1,0 +1,90 @@
+@import '../../styles/global/variables.scss';
+
+.Carousel {
+
+    &__in {
+        padding: 30px 0;
+    }
+
+    &__slider {
+        padding: 0 16px !important;
+
+
+        &_sl {
+            height: 540px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px 65px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            &_action {
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+
+                &_btn {
+                    padding: 14px 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fff;
+                    border-radius: 72px;
+                    color: $text;
+                    font-size: 12px;
+                    line-height: 14px;
+                    border: none;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: $text;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 73px;
+    border-radius: 48px;
+    height: 3px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+
+    &-active {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 425px) {
+    .Carousel {
+        &__slider {
+            &_sl {
+                height: 200px;
+
+                &_action {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+    .Carousel {
+        &__slider {
+            &_sl {
+                height: 300px;
+
+                &_action {
+                    display: none;
+                }
+            }
+        }
+    }
+}

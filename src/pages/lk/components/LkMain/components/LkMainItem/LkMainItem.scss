@@ -1,0 +1,42 @@
+@import '../../../../../../styles/global/variables.scss';
+
+.LkMainItem {
+    border-bottom: 1px solid $light_back;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        cursor: pointer;
+
+        &_name {
+            color: #3D5165;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 22px;
+        }   
+
+        &_toggle {
+            font-size: 20px;
+            line-height: 20px;
+            transition: all .3s ease;
+        }
+    }
+
+    &__body {
+        overflow: hidden;
+        transition: all .3s ease;
+        &_in {
+            padding: 20px 0;
+        }
+    }
+}
+
+.LkMainItem.active {
+    .LkMainItem__head {
+        &_toggle {
+            transform: rotate(180deg);
+        }
+    }
+}

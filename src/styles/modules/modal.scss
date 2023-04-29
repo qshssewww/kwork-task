@@ -1,0 +1,36 @@
+.modal {
+    .ant-modal-content {
+        height: 100%;
+        background-color: unset;
+        .ant-modal-close {
+            display: none;
+        }
+        .ant-modal-footer {
+            display: none;
+        }
+
+        .ant-modal-body {
+            height: 100%;
+            padding: 50px 40px;
+            background: #FFFFFF;
+            /* Grey / T4 */
+
+            border: 2px solid #ECECEC;
+            border-radius: 16px;
+        }
+    }
+
+
+    &__head {
+        font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+    }
+
+    &__body {
+
+        &_row {
+            margin-bottom: 15px;
+        }
+    }
+}

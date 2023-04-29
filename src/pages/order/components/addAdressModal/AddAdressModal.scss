@@ -1,0 +1,42 @@
+@import '../../../../styles/global/variables.scss';
+
+.popup__deliv {
+	background-color: #fff;
+	border-radius: 16px;
+	border: 2px solid #ECECEC;
+	max-width: 480px;
+	width: 100%;
+	padding: 40px;
+  }
+  .popup__deliv_title {
+	font-size: 24px;
+	line-height: 29px;
+	margin-bottom: 21px;
+	font-weight: 700;
+	color: #3D5165;
+  }
+  .popup__deliv_body_item {
+	font-weight: 500;
+	margin-bottom: 25px;
+	cursor: pointer;
+  }
+  .popup__deliv_body_item:hover {
+	color: $btn;
+  }
+  .popup__deliv_btn {
+	background-color: $btn_hover;
+	border-radius: 24px;
+	color: #fff;
+	font-weight: 500;
+	width: 100%;
+	padding: 14px;
+	text-align: center;
+	transition: all 0.2s ease;
+  }
+  .popup__deliv_btn:hover {
+	background-color: $orange;
+  }
+
+  .ant-radio-button-wrapper {
+	height: 100% ;
+  }

@@ -1,0 +1,293 @@
+@import '../../styles/global/variables.scss';
+
+.AboutPage {
+
+    &__main {
+        background-color: $btn;
+
+        &_in {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0 45px;
+        }
+
+        &_content {
+            width: 50%;
+
+            &_title {
+                margin-bottom: 40px;
+                font-size: 65px;
+                color: #fff !important;
+            }
+
+            &_text {
+                margin-bottom: 40px;
+                font-size: 30px;
+                line-height: 40px;
+                color: #fff;
+            }
+
+            &_ex {
+                background-color: $orange;
+                padding: 10px;
+                max-width: 420px;
+                width: 100%;
+                border-radius: 10px;
+                color: #fff;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &_img {
+            width: 46%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
+        }
+    }
+
+    &__info {
+
+        &_in {
+            padding: 40px 0;
+        }
+
+        &_title {
+            margin-bottom: 25px;
+        }
+
+        &_body {
+
+            &_item {
+                margin-bottom: 15px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    transition: all .3s ease;
+
+                    &:hover {
+
+                        color: $orange;
+
+                        .AboutPage__info_body_item_icon {
+                            background-color: $orange;
+                            color: #fff;
+                        }
+                    }
+
+                }
+
+                &_icon {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 100%;
+                    background-color: $btn;
+                    transition: all .3s ease;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    margin-right: 10px;
+                    flex: 0 0 auto;
+                    font-size: 12px;
+                }
+            }
+
+            &_soc {
+                margin-top: 40px;
+
+                &_name {
+                    margin-bottom: 15px;
+                }
+
+                &_list {
+                    display: flex;
+
+                    a {
+                        margin: 0 6px;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $btn;
+                        font-size: 20px;
+                        transition: all .3s ease;
+
+                        &:hover {
+                            color: $orange;
+
+                        }
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* стили для маленьких телефонов */
+    .AboutPage__main {
+        &_in {
+            flex-direction: column;
+        }
+
+        &_content,
+        &_img {
+            width: 100%;
+        }
+    }
+
+    .AboutPage__main_content {
+        &_title {
+            font-size: 40px !important;
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        &_ex {
+            max-width: 100%;
+        }
+    }
+
+    .AboutPage__info {
+        &_body {
+            &_item {
+                &_icon {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 10px;
+                    margin-right: 5px;
+                }
+            }
+
+            &_soc {
+                &_name {
+                    margin-bottom: 10px;
+                }
+
+                &_list {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    a {
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* стили для планшетов */
+    .AboutPage__main {
+        &_in {
+            flex-direction: column;
+        }
+
+        &_content,
+        &_img {
+            width: 100%;
+        }
+    }
+
+    .AboutPage__main_content {
+        &_title {
+            font-size: 50px !important;
+            margin-bottom: 30px;
+        }
+
+        &_text {
+            font-size: 25px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
+
+        &_ex {
+            max-width: 100%;
+        }
+    }
+
+    .AboutPage__info {
+        &_body {
+            &_item {
+                &_icon {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 10px;
+                    margin-right: 5px;
+                }
+            }
+
+            &_soc {
+                &_name {
+                    margin-bottom: 10px;
+                }
+
+                &_list {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    a {
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* стили для ноутбуков */
+    .AboutPage__main {
+        &_in {
+            flex-direction: row;
+        }
+
+        &_content {
+            width: 50%;
+        }
+
+        &_img {
+            width: 46%;
+        }
+    }
+
+    .AboutPage__main_content {
+        &_title {
+            font-size: 65px !important;
+            margin-bottom: 40px;
+        }
+
+    }
+}

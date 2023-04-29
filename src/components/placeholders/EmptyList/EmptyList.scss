@@ -1,0 +1,21 @@
+.EmptyList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+	&__icon {
+        font-size: 50px;
+        color: #cdcdcd;
+        margin-bottom: 20px;
+        line-height: 100%;
+    }
+
+	&__text {
+		text-align: center;
+		color: #cdcdcd;
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+}
